@@ -1,0 +1,22 @@
+package algoritmo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.jgap.Configuration;
+import org.jgap.IChromosome;
+
+public class AlgoritmoGenetico {
+
+	Configuration configuraton;
+	int numeroGeracoes = 100;
+	Double limite = 3.0;
+	int tamanhoPopulacao = 10;
+	int taxaMutacao = 100;
+	
+	List<IChromosome> melhoresChromossomos = new ArrayList<>();
+	List<Produto> produtos = new ArrayList<>();
+	IChromosome melhore;
+	
+	
+}

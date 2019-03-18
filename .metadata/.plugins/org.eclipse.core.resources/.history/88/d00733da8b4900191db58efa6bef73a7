@@ -1,0 +1,27 @@
+package algoritmo;
+
+
+import org.jgap.InvalidConfigurationException;
+
+
+public class AlgoritmoGeneticoApplication {
+
+	public static void main(String[] args) throws InvalidConfigurationException {
+		
+		AlgoritmoGenetico ag = new AlgoritmoGenetico();
+		ag.carregar();
+		ag.procurarMelhorSolucao();
+		
+		int geracao = 0;
+		for (int i = 0; i < ag.melhoresChromossomos.size(); i++) {
+			if (ag.melhor == null)
+					ag.melhor = ag.melhoresChromossomos.get(i);
+		}else if (ag.melhor.getFitnessValue() < ag.melhoresChromossomos.get(i).getFitnessValue()) {
+			ag.melhor = ag.melhoresChromossomos.get(i);
+			geracao = i;
+		}
+		
+		
+	}
+
+}

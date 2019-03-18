@@ -1,0 +1,16 @@
+package algoritmo;
+
+import org.jgap.Configuration;
+
+public class AlgoritmoGenetico {
+
+	Configuration configuraton;
+	int numeroGeracoes = 100;
+	Double limite = 3.0;
+	int tamanhoPopulacao = 10;
+	int taxaMutacao = 100;
+	
+	
+	
+	
+}

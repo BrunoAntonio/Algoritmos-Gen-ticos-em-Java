@@ -1,0 +1,20 @@
+package algoritmo;
+
+
+import org.jgap.InvalidConfigurationException;
+
+
+public class AlgoritmoGeneticoApplication {
+
+	public static void main(String[] args) throws InvalidConfigurationException {
+		
+		AlgoritmoGenetico ag = new AlgoritmoGenetico();
+		ag.carregar();
+		ag.procurarMelhorSolucao();
+		
+		
+		
+		
+	}
+
+}

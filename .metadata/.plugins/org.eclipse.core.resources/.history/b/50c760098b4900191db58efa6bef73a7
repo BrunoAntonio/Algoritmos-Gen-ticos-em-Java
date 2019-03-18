@@ -1,0 +1,34 @@
+package algoritmo;
+
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.jfree.ui.RefineryUtilities;
+
+
+
+
+
+
+
+public class AlgoritmoGeneticoApplication {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+		AlgoritmoGenetico ag = new AlgoritmoGenetico();
+		ag.carregar();
+		ag.procurarMelhorSolucao();
+		
+		
+		
+		
+	}
+
+}
